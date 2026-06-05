@@ -65,7 +65,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
 .btn-outline{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:transparent;color:var(--teal);border-radius:10px;font-family:var(--sans);font-size:15px;font-weight:600;text-decoration:none;transition:.2s;border:1.5px solid rgba(15,168,126,.4)}
 .btn-outline:hover{border-color:var(--teal);background:rgba(15,168,126,.06)}
 .hero-right{display:flex;justify-content:flex-end;align-items:flex-end;padding-bottom:0}
-.hero-photo-wrap{position:relative;width:380px}
+.hero-photo-wrap{position:relative;width:260px}
 .hero-photo-wrap img{width:100%;height:auto;display:block;filter:drop-shadow(0 40px 80px rgba(0,0,0,.4))}
 .hero-photo-badge{position:absolute;bottom:40px;left:-10px;background:rgba(10,31,28,.9);border:1px solid rgba(15,168,126,.3);border-radius:12px;padding:14px 18px;backdrop-filter:blur(8px)}
 .hero-badge-num{font-family:var(--display);font-size:24px;font-weight:700;color:var(--teal)}
@@ -288,7 +288,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
   .container,.nav-inner,.hero-inner,.video-inner,.contact-inner{padding-left:48px;padding-right:48px}
   .hero-name{font-size:68px}
   .hero-inner{gap:48px}
-  .hero-photo-wrap{width:340px}
+  .hero-photo-wrap{width:220px}
   .about-inner{gap:48px}
 }
 @media(max-width:768px){
@@ -297,7 +297,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
   .hero-inner{grid-template-columns:1fr;min-height:auto;padding-top:60px;padding-bottom:60px;gap:48px}
   .hero-name{font-size:52px}
   .hero-right{justify-content:center}
-  .hero-photo-wrap{width:280px}
+  .hero-photo-wrap{width:200px}
   .section-title{font-size:34px}
   .video-layout{grid-template-columns:1fr;gap:40px}
   .timeline-track{padding:0 24px}
@@ -378,8 +378,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
         </div>
       </div>
       <div class="video-player">
-        <video controls poster="assets/video-thumb.png" preload="metadata">
+        <video controls poster="assets/video-thumb.png" preload="auto" style="width:100%;height:100%;object-fit:cover">
           <source src="assets/intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
       </div>
     </div>
@@ -538,17 +539,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
                 <div class="work-bar-row"><span class="work-bar-label">Shoe Carnival</span><div class="work-bar-track"><div class="work-bar-fill" style="width:85%;background:#AFA9EC"></div></div><span class="work-bar-val">5×</span></div>
               </div>
               <div class="brainlabs-sub-cards">
-                <a href="assets/docker.png" target="_blank" class="bl-sub">
+                <a href="assets/docker.pdf" target="_blank" class="bl-sub">
                   <img src="assets/docker.png" alt="Docker" class="bl-sub-img">
                   <div><div class="bl-sub-title">Docker — B2B SaaS ABM</div><div class="bl-sub-meta">$4.5M pipeline · 4.2% CTR · $78 MQL</div></div>
                   <span class="bl-sub-arrow">→</span>
                 </a>
-                <a href="assets/noble.png" target="_blank" class="bl-sub">
+                <a href="assets/noble.pdf" target="_blank" class="bl-sub">
                   <img src="assets/noble.png" alt="Noble Panacea" class="bl-sub-img">
                   <div><div class="bl-sub-title">Noble Panacea — Luxury Meta</div><div class="bl-sub-meta">6.8× ROAS · $425 AOV · 58% retention</div></div>
                   <span class="bl-sub-arrow">→</span>
                 </a>
-                <a href="assets/shoe.png" target="_blank" class="bl-sub">
+                <a href="assets/shoe.pdf" target="_blank" class="bl-sub">
                   <img src="assets/shoe.png" alt="Shoe Carnival" class="bl-sub-img">
                   <div><div class="bl-sub-title">Shoe Carnival — US Retail</div><div class="bl-sub-meta">5× ROAS · 9 brands · $10M+ annual</div></div>
                   <span class="bl-sub-arrow">→</span>
@@ -717,7 +718,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
     </div>
     <div class="projects-grid">
 
-      <a href="assets/wiitronics.png" target="_blank" class="project-card">
+      <a href="assets/wiitronics.pdf" target="_blank" class="project-card">
         <div class="project-card-img">
           <img src="assets/wiitronics.png" alt="WiiTronics">
         </div>
@@ -768,11 +769,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
     <div class="articles-section">
       <div class="articles-header">
         <div class="articles-title">Thought Leadership</div>
-        <a href="https://www.linkedin.com/in/priyanka-rajpali/" target="_blank" class="articles-link">All articles on LinkedIn →</a>
+        <a href="https://www.linkedin.com/in/priyanka-rajpali/recent-activity/articles/" target="_blank" class="articles-link">All articles on LinkedIn →</a>
       </div>
       <div class="articles-list">
 
-        <a href="https://www.linkedin.com/in/priyanka-rajpali/" target="_blank" class="article-item">
+        <a href="https://www.linkedin.com/pulse/scaling-e-commerce-ads-stop-thinking-campaigns-start-systems-rajpali-svr7c/" target="_blank" class="article-item">
           <div class="article-left">
             <div class="article-tag">eCommerce · Growth Systems</div>
             <div class="article-title">eCommerce Scaling Playbook: Stop Thinking Campaigns, Start Thinking Systems</div>
@@ -781,7 +782,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
           <div class="article-arrow">→</div>
         </a>
 
-        <a href="https://www.linkedin.com/in/priyanka-rajpali/" target="_blank" class="article-item">
+        <a href="https://www.linkedin.com/pulse/gtm-education-loans-why-growth-here-nothing-like-typical-rajpali-zz32c/" target="_blank" class="article-item">
           <div class="article-left">
             <div class="article-tag">Fintech · GTM Strategy</div>
             <div class="article-title">GTM for Education Loans: Why Growth Here Is Nothing Like Usual Fintechs</div>
@@ -790,7 +791,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
           <div class="article-arrow">→</div>
         </a>
 
-        <a href="https://www.linkedin.com/in/priyanka-rajpali/" target="_blank" class="article-item">
+        <a href="https://www.linkedin.com/pulse/we-got-42-ctr-linkedin-developer-audience-heres-why-i-rajpali-7zeyc/" target="_blank" class="article-item">
           <div class="article-left">
             <div class="article-tag">B2B SaaS · LinkedIn ABM</div>
             <div class="article-title">We Got 4.2% CTR on LinkedIn. Here's Why I Almost Ignored It.</div>
@@ -823,16 +824,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
             <span class="stack-pill">Google Ads</span>
             <span class="stack-pill">LinkedIn Ads</span>
             <span class="stack-pill">HubSpot</span>
+            <span class="stack-pill">Salesforce</span>
+            <span class="stack-pill">Zapier</span>
+            <span class="stack-pill">n8n</span>
             <span class="stack-pill">GA4</span>
             <span class="stack-pill">VWO</span>
-            <span class="stack-pill">Salesforce</span>
-            <span class="stack-pill">DV360</span>
-            <span class="stack-pill">CM360</span>
             <span class="stack-pill">SEMrush</span>
             <span class="stack-pill">Quora Ads</span>
+            <span class="stack-pill">DV360</span>
+            <span class="stack-pill">CM360</span>
             <span class="stack-pill">Claude AI</span>
             <span class="stack-pill">Figma</span>
+            <span class="stack-pill">Notion</span>
             <span class="stack-pill">Looker Studio</span>
+            <span class="stack-pill">Tableau</span>
+            <span class="stack-pill">Framer AI</span>
+            <span class="stack-pill">SQL</span>
           </div>
         </div>
       </div>
