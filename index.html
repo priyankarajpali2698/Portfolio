@@ -179,8 +179,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
 /* ── TOOLS ─────────────────────────────── */
 #tools{padding:100px 0;background:var(--off-white)}
 .tools-header{text-align:center;margin-bottom:56px}
-.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
-.tool-card{border-radius:20px;overflow:hidden;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;transition:.3s;border:1.5px solid var(--border);height:100%}
+.tools-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.tool-card{border-radius:20px;overflow:hidden;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;transition:.3s;border:1.5px solid var(--border)}
 .tool-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(15,23,41,.1)}
 .tool-card-cac{background:var(--white)}
 .tool-card-one{background:var(--teal-dark)}
@@ -293,7 +293,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
   .hero-name{font-size:66px}
   .hero-photo-wrap{max-width:360px}
   .about-inner{gap:40px}
-  .tools-grid{grid-template-columns:1fr 1fr}
+  .tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .projects-grid{grid-template-columns:1fr 1fr}
 }
 
@@ -780,7 +780,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
         <div class="tool-body">
           <div class="tool-tag">Live Tool · Growth Marketing</div>
           <div class="tool-title">CAC Intelligence Calculator</div>
-          <div class="tool-desc">Most marketers know their CAC. Very few know if it's actually good. This calculator benchmarks your CAC, LTV, LTV:CAC ratio, and payback period against your industry — and uses AI to tell you what the numbers mean and what to test next.</div>
+          <div class="tool-desc">Most marketers know their CAC. Very few know if it's actually good. Benchmark your CAC, LTV, LTV:CAC ratio, and payback period against your industry — with AI analysis on what the numbers mean and what to test next.</div>
           <div class="tool-features">
             <div class="tool-feature"><div class="tool-feature-dot"></div><span>Industry benchmarks: SaaS, Fintech, EdTech, eCommerce, Marketplace</span></div>
             <div class="tool-feature"><div class="tool-feature-dot"></div><span>Live CAC, LTV, payback period calculation</span></div>
@@ -795,17 +795,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
 
 
       <a href="https://priyankarajpali2698.github.io/campaign-brief-generator/" target="_blank" class="tool-card tool-card-cac">
-        <div class="tool-card-banner tool-brief-banner">
+        <div class="tool-card-banner tool-cac-banner" style="background:linear-gradient(135deg,#0A1F1C 0%,#0D2E25 100%)">
           <div class="tool-banner-grid"></div>
           <div class="tool-banner-content">
             <div class="tool-banner-icon">📋</div>
-            <div class="tool-banner-name" style="color:var(--teal)">Campaign Brief</div>
+            <div class="tool-banner-name" style="color:#0FA87E">Campaign Brief</div>
           </div>
         </div>
         <div class="tool-body">
           <div class="tool-tag">Live Tool · Growth Marketing</div>
           <div class="tool-title">Campaign Brief Generator</div>
-          <div class="tool-desc">Six inputs. A full structured brief in 60 seconds — hook, audience persona, channel strategy with budget split, ad copy variants, creative direction, and KPIs. Upload brand guidelines or a PDF deck and Claude applies them automatically.</div>
+          <div class="tool-desc">Six inputs. A full structured brief in 60 seconds — hook, audience persona, channel strategy, ad copy variants, creative direction, and KPIs. Upload brand guidelines or a PDF and Claude applies them automatically.</div>
           <div class="tool-features">
             <div class="tool-feature"><div class="tool-feature-dot"></div><span>AI-generated hook, audience persona and channel strategy</span></div>
             <div class="tool-feature"><div class="tool-feature-dot"></div><span>Ad copy variants — 3 headlines + 3 body options</span></div>
@@ -829,7 +829,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(
         <div class="tool-body">
           <div class="tool-tag" style="color:#00E5CC">AI Product Concept · Brainlabs BrainSpark</div>
           <div class="tool-title tool-title-dark">OneSpace AI Agent</div>
-          <div class="tool-desc tool-desc-dark">An AI agent concept I co-developed inside Brainlabs to solve the operational friction that was costing clients money — before building tools was expected of marketers. Connects email, Slack, Monday.com, ad platforms, and calendars into one intelligent layer.</div>
+          <div class="tool-desc tool-desc-dark">An AI agent concept co-developed inside Brainlabs before building tools was expected of marketers. Connects email, Slack, Monday.com, ad platforms, and calendars into one intelligent layer that surfaces what matters.</div>
           <div class="tool-features">
             <div class="tool-feature tool-feature-dark"><div class="tool-feature-dot"></div><span>Auto-creates tasks from email requests and flags priority items</span></div>
             <div class="tool-feature tool-feature-dark"><div class="tool-feature-dot"></div><span>Proactive campaign pacing alerts before issues escalate</span></div>
